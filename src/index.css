@@ -11,13 +11,13 @@ body {
   background-color: #f3f4f6;
   padding: 4rem;
   min-width: 90vw;
-  height: 100vh;
+  height: auto;
   font-family: "Roboto", sans-serif;
 }
 .main {
   width: 100%;
   display: flex;
-  height: 100vh;
+  height: auto;
   gap: 4rem;
 }
 .switchcover {
@@ -91,17 +91,21 @@ body {
   border: 2px solid blue;
   background-color: #fff;
   padding: 5rem 4rem;
+  border-radius: 20px;
 }
 h1 {
   font-size: 4.5rem;
   font-weight: 600;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 h3 {
   font-size: 3rem;
   font-weight: 500;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   margin-bottom: 1.5rem;
+}
+.personal-details h3:first-of-type {
+  margin-top: 3.5rem;
 }
 .recommend {
   font-size: 2.3rem;
@@ -116,9 +120,61 @@ input {
   font-size: 2.5rem;
   padding-left: 2rem;
   box-sizing: border-box;
+  border: none;
 }
 input:focus {
   outline: none;
   border: 3px solid #6544c1;
   box-shadow: 0px 0px 10px 0px #6544c1;
+  transition: 0.5s;
+}
+.education {
+  background-color: #fff;
+  padding: 3rem 3rem;
+}
+.education-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;
+  margin-top: 1.5rem;
+  margin-bottom: 4.5rem;
+  cursor: pointer;
+  padding: 1.5rem;
+}
+
+.date {
+  display: flex;
+  gap: 2rem;
+}
+.start-date {
+  width: 55%;
+}
+.end-date {
+  width: 45%;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.button {
+  width: 190px;
+  height: 70px;
+  text-align: center;
+  background-color: #fff;
+  color: #848588;
+  font-size: 3rem;
+  font-weight: 600;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.cancel {
+  width: 170px;
+  margin-right: 1.5rem;
+}
+.save {
+  width: 150px;
+  background-color: #6544c1;
+  color: #fff;
 }
