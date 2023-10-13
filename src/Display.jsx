@@ -1,5 +1,5 @@
 function Display() {
-  return <div></div>;
+  return <div className="display"></div>;
 }
 
 export default Display;
